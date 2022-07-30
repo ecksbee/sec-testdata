@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!--XBRL Document Created with Wdesk from Workiva-->
+<!-- -->
+<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.bbt.com/20170331" xmlns:bbt="http://www.bbt.com/20170331" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:num="http://www.xbrl.org/dtr/type/numeric" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import namespace="http://fasb.org/us-gaap/2016-01-31" schemaLocation="http://xbrl.fasb.org/us-gaap/2016/elts/us-gaap-2016-01-31.xsd" />
+  <xsd:import namespace="http://fasb.org/us-roles/2016-01-31" schemaLocation="http://xbrl.fasb.org/us-gaap/2016/elts/us-roles-2016-01-31.xsd" />
+  <xsd:import namespace="http://fasb.org/us-types/2016-01-31" schemaLocation="http://xbrl.fasb.org/us-gaap/2016/elts/us-types-2016-01-31.xsd" />
+  <xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <xsd:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+  <xsd:import namespace="http://www.xbrl.org/2009/arcrole/fact-explanatoryFact" schemaLocation="http://www.xbrl.org/lrr/arcrole/factExplanatory-2009-12-16.xsd" />
+  <xsd:import namespace="http://www.xbrl.org/2009/role/negated" schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" />
+  <xsd:import namespace="http://www.xbrl.org/2009/role/net" schemaLocation="http://www.xbrl.org/lrr/role/net-2009-12-16.xsd" />
+  <xsd:import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+  <xsd:import namespace="http://www.xbrl.org/dtr/type/numeric" schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd" />
+  <xsd:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/country/2016-01-31" schemaLocation="http://xbrl.sec.gov/country/2016/country-2016-01-31.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/currency/2016-01-31" schemaLocation="http://xbrl.sec.gov/currency/2016/currency-2016-01-31.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/dei/2014-01-31" schemaLocation="http://xbrl.sec.gov/dei/2014/dei-2014-01-31.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/exch/2016-01-31" schemaLocation="http://xbrl.sec.gov/exch/2016/exch-2016-01-31.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/invest/2013-01-31" schemaLocation="http://xbrl.sec.gov/invest/2013/invest-2013-01-31.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/naics/2011-01-31" schemaLocation="http://xbrl.sec.gov/naics/2011/naics-2011-01-31.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/sic/2011-01-31" schemaLocation="http://xbrl.sec.gov/sic/2011/sic-2011-01-31.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/stpr/2011-01-31" schemaLocation="http://xbrl.sec.gov/stpr/2011/stpr-2011-01-31.xsd" />
+  <xsd:annotation>
+    <xsd:appinfo>
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="bbt-20170331_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple" />
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="bbt-20170331_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple" />
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="bbt-20170331_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple" />
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="bbt-20170331_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple" />
+      <link:roleType id="AcquisitionsAndDivestitures" roleURI="http://www.bbt.com/role/AcquisitionsAndDivestitures">
+        <link:definition>2102100 - Disclosure - Acquisitions and Divestitures</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsAndDivestituresNarrativeDetails" roleURI="http://www.bbt.com/role/AcquisitionsAndDivestituresNarrativeDetails">
+        <link:definition>2402401 - Disclosure - Acquisitions and Divestitures - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Aoci" roleURI="http://www.bbt.com/role/Aoci">
+        <link:definition>2110100 - Disclosure - AOCI</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AociDetails" roleURI="http://www.bbt.com/role/AociDetails">
+        <link:definition>2410402 - Disclosure - AOCI (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AociTables" roleURI="http://www.bbt.com/role/AociTables">
+        <link:definition>2310301 - Disclosure - AOCI (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisOfPresentation" roleURI="http://www.bbt.com/role/BasisOfPresentation">
+        <link:definition>2101100 - Disclosure - Basis of Presentation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisOfPresentationNarrativeDetails" roleURI="http://www.bbt.com/role/BasisOfPresentationNarrativeDetails">
+        <link:definition>2401402 - Disclosure - Basis of Presentation - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisOfPresentationPolicy" roleURI="http://www.bbt.com/role/BasisOfPresentationPolicy">
+        <link:definition>2201201 - Disclosure - Basis of Presentation (Policy)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BenefitPlans" roleURI="http://www.bbt.com/role/BenefitPlans">
+        <link:definition>2113100 - Disclosure - Benefit Plans</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BenefitPlansBenefitPlanCostDetails" roleURI="http://www.bbt.com/role/BenefitPlansBenefitPlanCostDetails">
+        <link:definition>2413403 - Disclosure - Benefit Plans - Benefit Plan Cost (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BenefitPlansNarrativeDetails" roleURI="http://www.bbt.com/role/BenefitPlansNarrativeDetails">
+        <link:definition>2413402 - Disclosure - Benefit Plans - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BenefitPlansTables" roleURI="http://www.bbt.com/role/BenefitPlansTables">
+        <link:definition>2313301 - Disclosure - Benefit Plans (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsAndContingencies" roleURI="http://www.bbt.com/role/CommitmentsAndContingencies">
+        <link:definition>2114100 - Disclosure - Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsAndContingenciesPledgedAssetsDetails" roleURI="http://www.bbt.com/role/CommitmentsAndContingenciesPledgedAssetsDetails">
+        <link:definition>2414403 - Disclosure - Commitments and Contingencies - Pledged Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsAndContingenciesSummaryDetails" roleURI="http://www.bbt.com/role/CommitmentsAndContingenciesSummaryDetails">
+        <link:definition>2414402 - Disclosure - Commitments and Contingencies - Summary (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsAndContingenciesTables" roleURI="http://www.bbt.com/role/CommitmentsAndContingenciesTables">
+        <link:definition>2314301 - Disclosure - Commitments and Contingencies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ComputationOfEps" roleURI="http://www.bbt.com/role/ComputationOfEps">
+        <link:definition>2117100 - Disclosure - Computation of EPS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ComputationOfEpsDetails" roleURI="http://www.bbt.com/role/ComputationOfEpsDetails">
+        <link:definition>2417402 - Disclosure - Computation of EPS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ComputationOfEpsTables" roleURI="http://www.bbt.com/role/ComputationOfEpsTables">
+        <link:definition>2317301 - Disclosure - Computation of EPS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheets" roleURI="http://www.bbt.com/role/ConsolidatedBalanceSheets">
+        <link:definition>1001000 - Statement - Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheetsParenthetical" roleURI="http://www.bbt.com/role/ConsolidatedBalanceSheetsParenthetical">
+        <link:definition>1001501 - Statement - Consolidated Balance Sheets (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsOfCashFlows" roleURI="http://www.bbt.com/role/ConsolidatedStatementsOfCashFlows">
+        <link:definition>1005000 - Statement - Consolidated Statements of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsOfChangesInShareholdersEquity" roleURI="http://www.bbt.com/role/ConsolidatedStatementsOfChangesInShareholdersEquity">
+        <link:definition>1004000 - Statement - Consolidated Statements of Changes in Shareholders' Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsOfComprehensiveIncome" roleURI="http://www.bbt.com/role/ConsolidatedStatementsOfComprehensiveIncome">
+        <link:definition>1003000 - Statement - Consolidated Statements of Comprehensive Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsOfIncome" roleURI="http://www.bbt.com/role/ConsolidatedStatementsOfIncome">
+        <link:definition>1002000 - Statement - Consolidated Statements of Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Deposits" roleURI="http://www.bbt.com/role/Deposits">
+        <link:definition>2107100 - Disclosure - Deposits</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DepositsDetails" roleURI="http://www.bbt.com/role/DepositsDetails">
+        <link:definition>2407402 - Disclosure - Deposits (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DepositsTables" roleURI="http://www.bbt.com/role/DepositsTables">
+        <link:definition>2307301 - Disclosure - Deposits (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstruments" roleURI="http://www.bbt.com/role/DerivativeFinancialInstruments">
+        <link:definition>2116100 - Disclosure - Derivative Financial Instruments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsCashFlowAndFairValueHedgesDetails" roleURI="http://www.bbt.com/role/DerivativeFinancialInstrumentsCashFlowAndFairValueHedgesDetails">
+        <link:definition>2416404 - Disclosure - Derivative Financial Instruments - Cash Flow and Fair Value Hedges (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsClassificationsAndHedgingRelationshipsDetails" roleURI="http://www.bbt.com/role/DerivativeFinancialInstrumentsClassificationsAndHedgingRelationshipsDetails">
+        <link:definition>2416402 - Disclosure - Derivative Financial Instruments - Classifications and Hedging Relationships (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsDealerCounterpartiesAndCentralClearingPartiesDetails" roleURI="http://www.bbt.com/role/DerivativeFinancialInstrumentsDealerCounterpartiesAndCentralClearingPartiesDetails">
+        <link:definition>2416405 - Disclosure - Derivative Financial Instruments - Dealer Counterparties and Central Clearing Parties (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsEffectOnConsolidatedStatementsOfIncomeDetails" roleURI="http://www.bbt.com/role/DerivativeFinancialInstrumentsEffectOnConsolidatedStatementsOfIncomeDetails">
+        <link:definition>2416403 - Disclosure - Derivative Financial Instruments - Effect on the Consolidated Statements of Income (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsTables" roleURI="http://www.bbt.com/role/DerivativeFinancialInstrumentsTables">
+        <link:definition>2316301 - Disclosure - Derivative Financial Instruments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DocumentAndEntityInformation" roleURI="http://www.bbt.com/role/DocumentAndEntityInformation">
+        <link:definition>0001000 - Document - Document and Entity Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueDisclosures" roleURI="http://www.bbt.com/role/FairValueDisclosures">
+        <link:definition>2115100 - Disclosure - Fair Value Disclosures</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueDisclosuresAssetsAndLiabilitiesMeasuredOnRecurringBasisDetails" roleURI="http://www.bbt.com/role/FairValueDisclosuresAssetsAndLiabilitiesMeasuredOnRecurringBasisDetails">
+        <link:definition>2415403 - Disclosure - Fair Value Disclosures - Assets and Liabilities Measured on a Recurring Basis (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueDisclosuresFinancialAssetsAndLiabilitiesNotRecordedAtFairValueDetails" roleURI="http://www.bbt.com/role/FairValueDisclosuresFinancialAssetsAndLiabilitiesNotRecordedAtFairValueDetails">
+        <link:definition>2415407 - Disclosure - Fair Value Disclosures - Financial Assets and Liabilities Not Recorded at Fair Value (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueDisclosuresLoansHeldForSaleDetails" roleURI="http://www.bbt.com/role/FairValueDisclosuresLoansHeldForSaleDetails">
+        <link:definition>2415405 - Disclosure - Fair Value Disclosures - Loans Held for Sale (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueDisclosuresMeasuredOnNonrecurringBasisDetails" roleURI="http://www.bbt.com/role/FairValueDisclosuresMeasuredOnNonrecurringBasisDetails">
+        <link:definition>2415406 - Disclosure - Fair Value Disclosures - Measured on a Nonrecurring Basis (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueDisclosuresNarrativeDetails" roleURI="http://www.bbt.com/role/FairValueDisclosuresNarrativeDetails">
+        <link:definition>2415402 - Disclosure - Fair Value Disclosures - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueDisclosuresOffBalanceSheetFinancialInstrumentsDetails" roleURI="http://www.bbt.com/role/FairValueDisclosuresOffBalanceSheetFinancialInstrumentsDetails">
+        <link:definition>2415408 - Disclosure - Fair Value Disclosures - Off-Balance Sheet Financial Instruments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueDisclosuresRollforwardOfLevel3AssetsAndLiabilitiesDetails" roleURI="http://www.bbt.com/role/FairValueDisclosuresRollforwardOfLevel3AssetsAndLiabilitiesDetails">
+        <link:definition>2415404 - Disclosure - Fair Value Disclosures - Rollforward of Level 3 Assets and Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueDisclosuresTables" roleURI="http://www.bbt.com/role/FairValueDisclosuresTables">
+        <link:definition>2315301 - Disclosure - Fair Value Disclosures (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillAndOtherIntangibleAssets" roleURI="http://www.bbt.com/role/GoodwillAndOtherIntangibleAssets">
+        <link:definition>2105100 - Disclosure - Goodwill and Other Intangible Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillAndOtherIntangibleAssetsChangesInCarryingAmountsAttributableToOperatingSegmentsDetails" roleURI="http://www.bbt.com/role/GoodwillAndOtherIntangibleAssetsChangesInCarryingAmountsAttributableToOperatingSegmentsDetails">
+        <link:definition>2405402 - Disclosure - Goodwill and Other Intangible Assets - Changes in Carrying Amounts Attributable to Operating Segments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillAndOtherIntangibleAssetsIdentifiableIntangibleAssetsDetails" roleURI="http://www.bbt.com/role/GoodwillAndOtherIntangibleAssetsIdentifiableIntangibleAssetsDetails">
+        <link:definition>2405403 - Disclosure - Goodwill and Other Intangible Assets - Identifiable Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillAndOtherIntangibleAssetsTables" roleURI="http://www.bbt.com/role/GoodwillAndOtherIntangibleAssetsTables">
+        <link:definition>2305301 - Disclosure - Goodwill and Other Intangible Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.bbt.com/role/IncomeTaxes">
+        <link:definition>2112100 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesNarrativeDetails" roleURI="http://www.bbt.com/role/IncomeTaxesNarrativeDetails">
+        <link:definition>2412402 - Disclosure - Income Taxes - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTables" roleURI="http://www.bbt.com/role/IncomeTaxesTables">
+        <link:definition>2312301 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesUnrecognizedTaxBenefitsDetails" roleURI="http://www.bbt.com/role/IncomeTaxesUnrecognizedTaxBenefitsDetails">
+        <link:definition>2412403 - Disclosure - Income Taxes - Unrecognized Tax Benefits (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoanServicing" roleURI="http://www.bbt.com/role/LoanServicing">
+        <link:definition>2106100 - Disclosure - Loan Servicing</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoanServicingAnalysisOfActivityInResidentialMsrsDetails" roleURI="http://www.bbt.com/role/LoanServicingAnalysisOfActivityInResidentialMsrsDetails">
+        <link:definition>2406405 - Disclosure - Loan Servicing - Analysis of Activity in Residential MSRs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoanServicingCommercialMortgageBankingActivitiesDetails" roleURI="http://www.bbt.com/role/LoanServicingCommercialMortgageBankingActivitiesDetails">
+        <link:definition>2406407 - Disclosure - Loan Servicing - Commercial Mortgage Banking Activities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoanServicingNarrativeDetails" roleURI="http://www.bbt.com/role/LoanServicingNarrativeDetails">
+        <link:definition>2406402 - Disclosure - Loan Servicing - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoanServicingResidentialMortgageBankingActivitiesDetails" roleURI="http://www.bbt.com/role/LoanServicingResidentialMortgageBankingActivitiesDetails">
+        <link:definition>2406403 - Disclosure - Loan Servicing - Residential Mortgage Banking Activities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoanServicingResidentialMsrSensitivityDetails" roleURI="http://www.bbt.com/role/LoanServicingResidentialMsrSensitivityDetails">
+        <link:definition>2406406 - Disclosure - Loan Servicing - Residential MSR Sensitivity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoanServicingSummaryOfResidentialMortgageBankingActivitiesDetails" roleURI="http://www.bbt.com/role/LoanServicingSummaryOfResidentialMortgageBankingActivitiesDetails">
+        <link:definition>2406404 - Disclosure - Loan Servicing - Summary of Residential Mortgage Banking Activities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoanServicingTables" roleURI="http://www.bbt.com/role/LoanServicingTables">
+        <link:definition>2306301 - Disclosure - Loan Servicing (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansAndAcl" roleURI="http://www.bbt.com/role/LoansAndAcl">
+        <link:definition>2104100 - Disclosure - Loans and ACL</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansAndAclAdditionalInformationDetails" roleURI="http://www.bbt.com/role/LoansAndAclAdditionalInformationDetails">
+        <link:definition>2404411 - Disclosure - Loans and ACL - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansAndAclAgingAnalysisOfLoansAndLeasesDetails" roleURI="http://www.bbt.com/role/LoansAndAclAgingAnalysisOfLoansAndLeasesDetails">
+        <link:definition>2404403 - Disclosure - Loans and ACL - Aging Analysis of Loans and Leases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansAndAclAllowanceForCreditLossesDetails" roleURI="http://www.bbt.com/role/LoansAndAclAllowanceForCreditLossesDetails">
+        <link:definition>2404405 - Disclosure - Loans and ACL - Allowance for Credit Losses (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansAndAclChangesInCarryingValueAndAccretableYieldForPciLoansDetails" roleURI="http://www.bbt.com/role/LoansAndAclChangesInCarryingValueAndAccretableYieldForPciLoansDetails">
+        <link:definition>2404410 - Disclosure - Loans and ACL - Changes in Carrying Value and Accretable Yield for PCI Loans (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansAndAclCollectivelyEvaluatedForImpairmentDetails" roleURI="http://www.bbt.com/role/LoansAndAclCollectivelyEvaluatedForImpairmentDetails">
+        <link:definition>2404406 - Disclosure - Loans and ACL - Collectively Evaluated for Impairment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansAndAclIndividuallyEvaluatedForImpairmentDetails" roleURI="http://www.bbt.com/role/LoansAndAclIndividuallyEvaluatedForImpairmentDetails">
+        <link:definition>2404407 - Disclosure - Loans and ACL - Individually Evaluated for Impairment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansAndAclNarrativeDetails" roleURI="http://www.bbt.com/role/LoansAndAclNarrativeDetails">
+        <link:definition>2404402 - Disclosure - Loans and ACL - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansAndAclRiskRatingDetails" roleURI="http://www.bbt.com/role/LoansAndAclRiskRatingDetails">
+        <link:definition>2404404 - Disclosure - Loans and ACL - Risk Rating (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansAndAclSummaryOfTdrsDetails" roleURI="http://www.bbt.com/role/LoansAndAclSummaryOfTdrsDetails">
+        <link:definition>2404408 - Disclosure - Loans and ACL - Summary of TDRs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansAndAclTables" roleURI="http://www.bbt.com/role/LoansAndAclTables">
+        <link:definition>2304301 - Disclosure - Loans and ACL (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansAndAclTypesOfModificationsAndImpactToAllowanceDetails" roleURI="http://www.bbt.com/role/LoansAndAclTypesOfModificationsAndImpactToAllowanceDetails">
+        <link:definition>2404409 - Disclosure - Loans and ACL - Types of Modifications and Impact to Allowance (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebt" roleURI="http://www.bbt.com/role/LongTermDebt">
+        <link:definition>2108100 - Disclosure - Long-Term Debt</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtNarrativeDetails" roleURI="http://www.bbt.com/role/LongTermDebtNarrativeDetails">
+        <link:definition>2408402 - Disclosure - Long-Term Debt - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtScheduleOfLongTermDebtInterestRatesAndMaturityDatesDetails" roleURI="http://www.bbt.com/role/LongTermDebtScheduleOfLongTermDebtInterestRatesAndMaturityDatesDetails">
+        <link:definition>2408403 - Disclosure - Long-Term Debt - Schedule of Long Term Debt, Interest Rates and Maturity Dates (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtTables" roleURI="http://www.bbt.com/role/LongTermDebtTables">
+        <link:definition>2308301 - Disclosure - Long-Term Debt (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OperatingSegments" roleURI="http://www.bbt.com/role/OperatingSegments">
+        <link:definition>2119100 - Disclosure - Operating Segments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OperatingSegmentsDetails" roleURI="http://www.bbt.com/role/OperatingSegmentsDetails">
+        <link:definition>2419403 - Disclosure - Operating Segments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OperatingSegmentsNarrativeDetails" roleURI="http://www.bbt.com/role/OperatingSegmentsNarrativeDetails">
+        <link:definition>2419402 - Disclosure - Operating Segments - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OperatingSegmentsTables" roleURI="http://www.bbt.com/role/OperatingSegmentsTables">
+        <link:definition>2319301 - Disclosure - Operating Segments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Securities" roleURI="http://www.bbt.com/role/Securities">
+        <link:definition>2103100 - Disclosure - Securities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SecuritiesAmortizedCostAndEstimatedFairValueByContractualMaturityDetails" roleURI="http://www.bbt.com/role/SecuritiesAmortizedCostAndEstimatedFairValueByContractualMaturityDetails">
+        <link:definition>2403405 - Disclosure - Securities - Amortized Cost and Estimated Fair Value by Contractual Maturity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SecuritiesAmortizedCostGrossUnrealizedGainsAndLossesAndFairValueDetails" roleURI="http://www.bbt.com/role/SecuritiesAmortizedCostGrossUnrealizedGainsAndLossesAndFairValueDetails">
+        <link:definition>2403403 - Disclosure - Securities - Amortized Cost, Gross Unrealized Gains and Losses, and Fair Value (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SecuritiesGrossUnrealizedLossesAndFairValuesOfInvestmentsInContinuousUnrealizedLossPositionsDetails" roleURI="http://www.bbt.com/role/SecuritiesGrossUnrealizedLossesAndFairValuesOfInvestmentsInContinuousUnrealizedLossPositionsDetails">
+        <link:definition>2403406 - Disclosure - Securities - Gross Unrealized Losses and Fair Values of Investments in Continuous Unrealized Loss Positions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SecuritiesNarrativeDetails" roleURI="http://www.bbt.com/role/SecuritiesNarrativeDetails">
+        <link:definition>2403402 - Disclosure - Securities - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SecuritiesScheduleOfCreditLossesWithOttiDetails" roleURI="http://www.bbt.com/role/SecuritiesScheduleOfCreditLossesWithOttiDetails">
+        <link:definition>2403404 - Disclosure - Securities - Schedule of Credit Losses with OTTI (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SecuritiesTables" roleURI="http://www.bbt.com/role/SecuritiesTables">
+        <link:definition>2303301 - Disclosure - Securities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareholdersEquity" roleURI="http://www.bbt.com/role/ShareholdersEquity">
+        <link:definition>2109100 - Disclosure - Shareholders' Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareholdersEquityRestrictedSharesAndRsusActivityRollForwardDetails" roleURI="http://www.bbt.com/role/ShareholdersEquityRestrictedSharesAndRsusActivityRollForwardDetails">
+        <link:definition>2409402 - Disclosure - Shareholders' Equity - Restricted Shares and RSUs Activity Roll Forward (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareholdersEquityTables" roleURI="http://www.bbt.com/role/ShareholdersEquityTables">
+        <link:definition>2309301 - Disclosure - Shareholders' Equity (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xsd:appinfo>
+  </xsd:annotation>
+  <xsd:element abstract="true" id="bbt_AOCIOtherAttributabletoParentMember" name="AOCIOtherAttributabletoParentMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_AllocatedCorporateExpenses" name="AllocatedCorporateExpenses" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_AllowanceForCreditLossesMember" name="AllowanceForCreditLossesMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_AssetsMeasuredAtFairValueOnNonrecurringBasisForeclosedRealEstate" name="AssetsMeasuredAtFairValueOnNonrecurringBasisForeclosedRealEstate" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element id="bbt_AssetsMeasuredAtFairValueOnNonrecurringBasisImpairedLoans" name="AssetsMeasuredAtFairValueOnNonrecurringBasisImpairedLoans" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element id="bbt_AssumptionForFairValueOfInterestsContinuedToBeHeldByTransferorServicingAssetsOrLiabilitiesWeightedAverageLife2" name="AssumptionForFairValueOfInterestsContinuedToBeHeldByTransferorServicingAssetsOrLiabilitiesWeightedAverageLife2" nillable="true" substitutionGroup="xbrli:item" type="xbrli:durationItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_BranchBankMember" name="BranchBankMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_CGSCNorthAmericaHoldingsCorporationMember" name="CGSCNorthAmericaHoldingsCorporationMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_CarryingAmountLiabilityForLettersOfCreditAndFinancialGuaranteesWritten" name="CarryingAmountLiabilityForLettersOfCreditAndFinancialGuaranteesWritten" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="bbt_CarryingValueOfPurchasedImpairedAndNonimpairedLoansTable" name="CarryingValueOfPurchasedImpairedAndNonimpairedLoansTable" nillable="true" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_CashCollateralPostedRelatedToDerivativeCreditRisk" name="CashCollateralPostedRelatedToDerivativeCreditRisk" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element id="bbt_CashCollateralToSecureLossFromCounterpartyRelatedToDerivativeCreditRisk" name="CashCollateralToSecureLossFromCounterpartyRelatedToDerivativeCreditRisk" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element id="bbt_CashpaidtoterminateFDIClossshareagreements" name="CashpaidtoterminateFDIClossshareagreements" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_CentralClearingPartiesMember" name="CentralClearingPartiesMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_CertainLoansAcquiredInTransferNotAaccountedForAsDebtSecuritiesCarryingAmountAccretion" name="CertainLoansAcquiredInTransferNotAaccountedForAsDebtSecuritiesCarryingAmountAccretion" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element id="bbt_CertainLoansAcquiredInTransferNotAccountedForAsDebtSecuritiesAccretableYieldOtherNet" name="CertainLoansAcquiredInTransferNotAccountedForAsDebtSecuritiesAccretableYieldOtherNet" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_CertainLoansAcquiredinTransferNotAccountedforasDebtSecuritiesCarryingValueMovementScheduleRollForward" name="CertainLoansAcquiredinTransferNotAccountedforasDebtSecuritiesCarryingValueMovementScheduleRollForward" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_Certainloansacquiredintransfernotaccountedforasdebtsecuritiescarryingamountadditions" name="Certainloansacquiredintransfernotaccountedforasdebtsecuritiescarryingamountadditions" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element id="bbt_ChangeInCarryingAmountOfLoansPaymentsReceivedNet" name="ChangeInCarryingAmountOfLoansPaymentsReceivedNet" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_ChangesInAociTable" name="ChangesInAociTable" nillable="true" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_ClientRelatedAndOtherRiskManagementMember" name="ClientRelatedAndOtherRiskManagementMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_CommercialAndIndustrialMember" name="CommercialAndIndustrialMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_CommercialDealerFloorPlanMember" name="CommercialDealerFloorPlanMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_CommercialLoansMember" name="CommercialLoansMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_CommercialMortgageLoansSoldWithRecourseLiability" name="CommercialMortgageLoansSoldWithRecourseLiability" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="bbt_CommercialOtherLendingSubsidiariesMember" name="CommercialOtherLendingSubsidiariesMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_CommitmentstoExtendOriginateorPurchaseCreditMember" name="CommitmentstoExtendOriginateorPurchaseCreditMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_CommunityBankingMember" name="CommunityBankingMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_CreConstructionAndDevelopmentMember" name="CreConstructionAndDevelopmentMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_CreIncomeProducingPropertiesMember" name="CreIncomeProducingPropertiesMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_DealerCounterpartiesMember" name="DealerCounterpartiesMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_DealerFinancialServicesMember" name="DealerFinancialServicesMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_DebtInstrumentsLineItems" name="DebtInstrumentsLineItems" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_DeferredGainsAndLossesFromHedgesTableTextBlock" name="DeferredGainsAndLossesFromHedgesTableTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_DepositsMoneyMarketandSavingsDeposits" name="DepositsMoneyMarketandSavingsDeposits" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element id="bbt_DerivativesInGainPositionForWhichCollateralHasBeenReceived" name="DerivativesInGainPositionForWhichCollateralHasBeenReceived" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element id="bbt_DerivativesInLossPositionForWhichCollateralHasBeenPosted" name="DerivativesInLossPositionForWhichCollateralHasBeenPosted" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="bbt_DirectRetailLendingMember" name="DirectRetailLendingMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_DocumentAndEntityInformationAbstract" name="DocumentAndEntityInformationAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_ExpectedToVestAtEndOfPeriodNumber" name="ExpectedToVestAtEndOfPeriodNumber" nillable="true" substitutionGroup="xbrli:item" type="xbrli:sharesItemType" xbrli:periodType="instant" />
+  <xsd:element id="bbt_ExpectedToVestAtEndOfPeriodWeightedAverageGrantDateFairValue" name="ExpectedToVestAtEndOfPeriodWeightedAverageGrantDateFairValue" nillable="true" substitutionGroup="xbrli:item" type="num:perShareItemType" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="bbt_FDICShareonAccumulatedGainLossonAvailableforSaleSecuritiesAttributabletoParentMember" name="FDICShareonAccumulatedGainLossonAvailableforSaleSecuritiesAttributabletoParentMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_FairValueAssetsandLiabilitiesMeasuredonRecurringBasisGainLossAbstract" name="FairValueAssetsandLiabilitiesMeasuredonRecurringBasisGainLossAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_FairValueDifferenceBetweenSecuritiesHeldandSecuritiesOwnedPercentage" name="FairValueDifferenceBetweenSecuritiesHeldandSecuritiesOwnedPercentage" nillable="true" substitutionGroup="xbrli:item" type="num:percentItemType" xbrli:periodType="instant" />
+  <xsd:element id="bbt_FairValueMeasurementwithUnobservableInputsReconciliationRecurringBasisAssetOther" name="FairValueMeasurementwithUnobservableInputsReconciliationRecurringBasisAssetOther" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_FinancialInstrumentLettersofCreditMember" name="FinancialInstrumentLettersofCreditMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_FinancialServicesMember" name="FinancialServicesMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_FinancingReceivablesRecordedInvestmentThirtyToEightyNineDaysPastDue" name="FinancingReceivablesRecordedInvestmentThirtyToEightyNineDaysPastDue" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element id="bbt_Financingreceivablesimpairedtroubleddebtrestructuringallowanceforcreditlosseschange" name="Financingreceivablesimpairedtroubleddebtrestructuringallowanceforcreditlosseschange" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_FixedRateMember" name="FixedRateMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_FloatingRateMember" name="FloatingRateMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_ForwardCommitmentsMember" name="ForwardCommitmentsMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_FutureFundingCommitmentsToConsolidatedPrivateEquityFunds" name="FutureFundingCommitmentsToConsolidatedPrivateEquityFunds" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="bbt_HedgedItemAxis" name="HedgedItemAxis" nillable="true" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_HedgedItemDomain" name="HedgedItemDomain" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_ImpairedFinancingReceivablewithNoRelatedAllowanceAbstract" name="ImpairedFinancingReceivablewithNoRelatedAllowanceAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_ImpairedFinancingReceivablewithRelatedAllowanceAbstract" name="ImpairedFinancingReceivablewithRelatedAllowanceAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_IncreaseDecreasePostedCollateral" name="IncreaseDecreasePostedCollateral" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="bbt_InsuranceServicesMember" name="InsuranceServicesMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_InvestmentsInAffordableHousingProjects" name="InvestmentsInAffordableHousingProjects" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="bbt_LoanInformationLineItems" name="LoanInformationLineItems" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_LoanInformationTable" name="LoanInformationTable" nillable="true" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_LoanServicingActivityTableTextBlock" name="LoanServicingActivityTableTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_LoansSoldwithRecourseOtherMember" name="LoansSoldwithRecourseOtherMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_LoansSoldwithRecourseResidentialMember" name="LoansSoldwithRecourseResidentialMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_LossesRelatedToWriteDownsOfForeclosedRealEstate" name="LossesRelatedToWriteDownsOfForeclosedRealEstate" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element id="bbt_LossesRelatedToWriteDownsOfImpairedLoans" name="LossesRelatedToWriteDownsOfImpairedLoans" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element id="bbt_MaximumRecourseExposureOnCommercialMortgageLoansSold" name="MaximumRecourseExposureOnCommercialMortgageLoansSold" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element id="bbt_MaximumRecourseExposureOnResidentialMortgageLoansSold" name="MaximumRecourseExposureOnResidentialMortgageLoansSold" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element id="bbt_Maximumlengthoftimeentityhashedgedportionofvariablecashflowsforforecastedtransactionsinyears" name="Maximumlengthoftimeentityhashedgedportionofvariablecashflowsforforecastedtransactionsinyears" nillable="true" substitutionGroup="xbrli:item" type="xbrli:durationItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_MortgageBankingIncomeMember" name="MortgageBankingIncomeMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_MortgageBankingMember" name="MortgageBankingMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_MortgageServicingRightsMember" name="MortgageServicingRightsMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_MunicipalSecuritiesMember" name="MunicipalSecuritiesMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_NationalPennBancsharesInc.Member" name="NationalPennBancsharesInc.Member" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_NetChangeInAmountsAttributableToFDICUnderLossShareNetOfTax" name="NetChangeInAmountsAttributableToFDICUnderLossShareNetOfTax" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element id="bbt_NetChangeInAmountsAttributableToFDICUnderLossShareTaxPortion" name="NetChangeInAmountsAttributableToFDICUnderLossShareTaxPortion" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_NetDerivativesMember" name="NetDerivativesMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_NetUnrealizedGainsLossesIncludedInNetIncomeRelatedToLevelThreeAssetsAndLiabilitiesAtEndOfPeriod" name="NetUnrealizedGainsLossesIncludedInNetIncomeRelatedToLevelThreeAssetsAndLiabilitiesAtEndOfPeriod" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element id="bbt_NetUnrecognizedAfterTaxGainOnTerminatedHedgesRecordedInOciToBeRecognizedThru2022" name="NetUnrecognizedAfterTaxGainOnTerminatedHedgesRecordedInOciToBeRecognizedThru2022" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element id="bbt_NetUnrecognizedAfterTaxLossOnActiveHedgesRecordedInOci" name="NetUnrecognizedAfterTaxLossOnActiveHedgesRecordedInOci" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element id="bbt_NetbenefitrelatedtoFHAmatter" name="NetbenefitrelatedtoFHAmatter" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_NonagencyMBSMember" name="NonagencyMBSMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_NoninterestExpenseExcludingAmortizationofIntangibles" name="NoninterestExpenseExcludingAmortizationofIntangibles" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element id="bbt_Oas" name="Oas" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element id="bbt_OptionAdjustedSpread" name="OptionAdjustedSpread" nillable="true" substitutionGroup="xbrli:item" type="num:percentItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_OptionTradesMember" name="OptionTradesMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_OriginationOfCommercialRealEstateMortgages" name="OriginationOfCommercialRealEstateMortgages" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_OtherComprehensiveIncomeLossBeforeTaxPeriodIncreaseDecreaseLineItems" name="OtherComprehensiveIncomeLossBeforeTaxPeriodIncreaseDecreaseLineItems" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_OtherComprehensiveIncomeOtherNetTax" name="OtherComprehensiveIncomeOtherNetTax" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_OtherDerivativesMember" name="OtherDerivativesMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_OtherSwapsMember" name="OtherSwapsMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_OtherTreasuryCorporateMember" name="OtherTreasuryCorporateMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_OtherthanTemporaryImpairmentCreditLossesRecognizedinEarningsCreditRecoveriesThroughYield" name="OtherthanTemporaryImpairmentCreditLossesRecognizedinEarningsCreditRecoveriesThroughYield" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element id="bbt_OtherthanTemporaryImpairmentCreditLossesRecognizedinEarningsIncludedasaResultofLossShareTermination" name="OtherthanTemporaryImpairmentCreditLossesRecognizedinEarningsIncludedasaResultofLossShareTermination" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element id="bbt_OutstandingLoanCommitmentsToTheseAffordableHousingInvestments" name="OutstandingLoanCommitmentsToTheseAffordableHousingInvestments" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="bbt_PCIMember" name="PCIMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_PayFixedSwapsMember" name="PayFixedSwapsMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_PercentageOfMortgageLoansServicedForOthers" name="PercentageOfMortgageLoansServicedForOthers" nillable="true" substitutionGroup="xbrli:item" type="num:percentItemType" xbrli:periodType="instant" />
+  <xsd:element id="bbt_PledgedAssetsTextBlock" name="PledgedAssetsTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_PortionOfPretaxGainOnTerminatedHedgesToBeRecognizedAsReductionOfInterestExpenseDuringNext12Months" name="PortionOfPretaxGainOnTerminatedHedgesToBeRecognizedAsReductionOfInterestExpenseDuringNext12Months" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element id="bbt_PrepaymentSpeedAssumption" name="PrepaymentSpeedAssumption" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_PurchasedImpairedLoansMember" name="PurchasedImpairedLoansMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_PurchasedNonimpairedLoansMember" name="PurchasedNonimpairedLoansMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_Purchasedloanportfolio" name="Purchasedloanportfolio" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_ReREMICTrustsMember" name="ReREMICTrustsMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_ReceiveFixedSwapsMember" name="ReceiveFixedSwapsMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_RecognizedPretaxGainsOnMortgageLoansWithUnpaidPrincipalBalances" name="RecognizedPretaxGainsOnMortgageLoansWithUnpaidPrincipalBalances" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element id="bbt_RegulatoryAssessments" name="RegulatoryAssessments" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element id="bbt_ReserveForCommercialMortgageLoansSoldWithRecourse" name="ReserveForCommercialMortgageLoansSoldWithRecourse" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element id="bbt_ReserveForResidentialMortgageLoansSold" name="ReserveForResidentialMortgageLoansSold" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="bbt_ReserveForUnfundedLendingCommitmentsMember" name="ReserveForUnfundedLendingCommitmentsMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_ResidentialMortgageBankingActivitiesTableTextBlock" name="ResidentialMortgageBankingActivitiesTableTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_ResidentialMortgageBankingMember" name="ResidentialMortgageBankingMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_ResidentialMortgageLoansSoldWithRecourse" name="ResidentialMortgageLoansSoldWithRecourse" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element id="bbt_ResidentialMortgageLoansWeightedAverageServicingFeePercentage" name="ResidentialMortgageLoansWeightedAverageServicingFeePercentage" nillable="true" substitutionGroup="xbrli:item" type="num:percentItemType" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="bbt_ResidentialMortgageServicingRightsMember" name="ResidentialMortgageServicingRightsMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_RetailOtherLendingSubsidiariesMember" name="RetailOtherLendingSubsidiariesMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_RetailPortfolioSegmentMember" name="RetailPortfolioSegmentMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_RetailResidentialMortgageGovernmentGuaranteedMember" name="RetailResidentialMortgageGovernmentGuaranteedMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_RetailResidentialMortgageMember" name="RetailResidentialMortgageMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_RetailResidentialMortgageNonguaranteedMember" name="RetailResidentialMortgageNonguaranteedMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_RetailRevolvingCreditMember" name="RetailRevolvingCreditMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_RetailSalesFinanceMember" name="RetailSalesFinanceMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_ScheduleOfCarryingValueOfPurchasedImpairedAndNonimpairedLoansTableTextBlock" name="ScheduleOfCarryingValueOfPurchasedImpairedAndNonimpairedLoansTableTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_ScheduleOfDerivativeInstrumentsSummaryOfCollateralPositionsWithCounterpartiesTableTextBlock" name="ScheduleOfDerivativeInstrumentsSummaryOfCollateralPositionsWithCounterpartiesTableTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_ScheduleOfPerformingAndNonperformingTdrsTableTextBlock" name="ScheduleOfPerformingAndNonperformingTdrsTableTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_SecuritiesAmortizedCost" name="SecuritiesAmortizedCost" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element id="bbt_SegmentReportingInformationIntersegmentRevenue" name="SegmentReportingInformationIntersegmentRevenue" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element id="bbt_SelectedInformationAboutLoansAndLeasesTableTextBlock" name="SelectedInformationAboutLoansAndLeasesTableTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_SensitivityAnalysisOfFairValueOf10IncreaseInWeightedAverageOas" name="SensitivityAnalysisOfFairValueOf10IncreaseInWeightedAverageOas" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element id="bbt_SensitivityAnalysisOfFairValueOf20PercentIncreaseInWeightedAverageOas" name="SensitivityAnalysisOfFairValueOf20PercentIncreaseInWeightedAverageOas" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element id="bbt_ServicingCosts" name="ServicingCosts" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_SpecializedLendingMember" name="SpecializedLendingMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_StockTransactionsAbstract" name="StockTransactionsAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_SummaryofCommercialMortgageBankingActivitiesTableTextBlock" name="SummaryofCommercialMortgageBankingActivitiesTableTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_SummaryofLoansCollectivelyEvaluatedforImpairmentTableTextBlock" name="SummaryofLoansCollectivelyEvaluatedforImpairmentTableTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_SummaryofdepositstableTableTextBlock" name="SummaryofdepositstableTableTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_TaxCreditsSubjectToRecaptureRelatedToAffordableHousingProjects" name="TaxCreditsSubjectToRecaptureRelatedToAffordableHousingProjects" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="bbt_ThreeMonthLiborFundingMember" name="ThreeMonthLiborFundingMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_TimeDeposits250000AndGreater" name="TimeDeposits250000AndGreater" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element id="bbt_TotalResidentialMortgageServicingPortfolio" name="TotalResidentialMortgageServicingPortfolio" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element id="bbt_TransferofDeposits" name="TransferofDeposits" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element id="bbt_TransferofLoansandLeasesReceivable" name="TransferofLoansandLeasesReceivable" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element id="bbt_UnpaidPrincipalBalance" name="UnpaidPrincipalBalance" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element id="bbt_UnpaidPrincipalBalanceOfCommercialMortgageLoansServicedForOthers" name="UnpaidPrincipalBalanceOfCommercialMortgageLoansServicedForOthers" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element id="bbt_UnpaidPrincipalBalanceOfResidentialmortgageloanssold" name="UnpaidPrincipalBalanceOfResidentialmortgageloanssold" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element id="bbt_UnpaidPrincipalBalancesOfResidentialMortgageLoansServicedForOthers" name="UnpaidPrincipalBalancesOfResidentialMortgageLoansServicedForOthers" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element id="bbt_UnrecognizedPretaxGainOnTerminatedHedgesToBeRecognizedThrough2019" name="UnrecognizedPretaxGainOnTerminatedHedgesToBeRecognizedThrough2019" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element id="bbt_UnsecuredPositionWithDerivativeDealers" name="UnsecuredPositionWithDerivativeDealers" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="bbt_VestedMember" name="VestedMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_WeightedAverageInterestRateServicedForOthers" name="WeightedAverageInterestRateServicedForOthers" nillable="true" substitutionGroup="xbrli:item" type="num:percentItemType" xbrli:periodType="instant" />
+  <xsd:element id="bbt_WeightedAverageRemainingLifeOfPrivateEquityAndSimilarInvestments" name="WeightedAverageRemainingLifeOfPrivateEquityAndSimilarInvestments" nillable="true" substitutionGroup="xbrli:item" type="xbrli:durationItemType" xbrli:periodType="duration" />
+  <xsd:element id="bbt_WeightedaveragematurityofFHLBadvances" name="WeightedaveragematurityofFHLBadvances" nillable="true" substitutionGroup="xbrli:item" type="xbrli:durationItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="bbt_WhenIssuedSecuritiesAndForwardRateAgreementsAndForwardCommitmentsMember" name="WhenIssuedSecuritiesAndForwardRateAgreementsAndForwardCommitmentsMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+</xsd:schema>
