@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xbrl
+  xmlns="http://www.xbrl.org/2003/instance"
+  xmlns:dei="http://xbrl.sec.gov/dei/2020-01-31"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+    <link:schemaRef xlink:href="dfin-20210225.xsd" xlink:type="simple"/>
+    <context id="C_0001669811_20210225_20210225">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001669811</identifier>
+        </entity>
+        <period>
+            <startDate>2021-02-25</startDate>
+            <endDate>2021-02-25</endDate>
+        </period>
+    </context>
+    <dei:AmendmentFlag contextRef="C_0001669811_20210225_20210225" id="F_000001">false</dei:AmendmentFlag>
+    <dei:EntityCentralIndexKey contextRef="C_0001669811_20210225_20210225" id="F_000004">0001669811</dei:EntityCentralIndexKey>
+    <dei:DocumentType contextRef="C_0001669811_20210225_20210225" id="F_000000">8-K</dei:DocumentType>
+    <dei:DocumentPeriodEndDate contextRef="C_0001669811_20210225_20210225" id="F_000002">2021-02-25</dei:DocumentPeriodEndDate>
+    <dei:EntityRegistrantName contextRef="C_0001669811_20210225_20210225" id="F_000003">Donnelley Financial Solutions, Inc.</dei:EntityRegistrantName>
+    <dei:EntityIncorporationStateCountryCode contextRef="C_0001669811_20210225_20210225" id="F_000007">DE</dei:EntityIncorporationStateCountryCode>
+    <dei:EntityFileNumber contextRef="C_0001669811_20210225_20210225" id="F_000006">001-37728</dei:EntityFileNumber>
+    <dei:EntityTaxIdentificationNumber contextRef="C_0001669811_20210225_20210225" id="F_000008">36-4829638</dei:EntityTaxIdentificationNumber>
+    <dei:EntityAddressAddressLine1 contextRef="C_0001669811_20210225_20210225" id="F_000009">35 West Wacker Drive</dei:EntityAddressAddressLine1>
+    <dei:EntityAddressCityOrTown contextRef="C_0001669811_20210225_20210225" id="F_000010">Chicago</dei:EntityAddressCityOrTown>
+    <dei:EntityAddressStateOrProvince contextRef="C_0001669811_20210225_20210225" id="F_000011">IL</dei:EntityAddressStateOrProvince>
+    <dei:EntityAddressPostalZipCode contextRef="C_0001669811_20210225_20210225" id="F_000012">60601</dei:EntityAddressPostalZipCode>
+    <dei:CityAreaCode contextRef="C_0001669811_20210225_20210225" id="F_000013">(800)</dei:CityAreaCode>
+    <dei:LocalPhoneNumber contextRef="C_0001669811_20210225_20210225" id="F_000014">823-5304</dei:LocalPhoneNumber>
+    <dei:WrittenCommunications contextRef="C_0001669811_20210225_20210225" id="F_000015">false</dei:WrittenCommunications>
+    <dei:SolicitingMaterial contextRef="C_0001669811_20210225_20210225" id="F_000016">false</dei:SolicitingMaterial>
+    <dei:PreCommencementTenderOffer contextRef="C_0001669811_20210225_20210225" id="F_000017">false</dei:PreCommencementTenderOffer>
+    <dei:PreCommencementIssuerTenderOffer contextRef="C_0001669811_20210225_20210225" id="F_000018">false</dei:PreCommencementIssuerTenderOffer>
+    <dei:EntityEmergingGrowthCompany contextRef="C_0001669811_20210225_20210225" id="F_000005">false</dei:EntityEmergingGrowthCompany>
+    <dei:Security12bTitle contextRef="C_0001669811_20210225_20210225" id="F_000019">Common Stock (Par Value $0.01)</dei:Security12bTitle>
+    <dei:TradingSymbol contextRef="C_0001669811_20210225_20210225" id="F_000020">DFIN</dei:TradingSymbol>
+    <dei:SecurityExchangeName contextRef="C_0001669811_20210225_20210225" id="F_000021">NYSE</dei:SecurityExchangeName>
+</xbrl>
